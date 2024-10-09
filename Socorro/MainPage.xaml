@@ -1,6 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Socorro.MainPage">
+             x:Class="Socorro.MainPage"
+             Shell.NavBarIsVisible="false">
+
+             <Grid>
+
+             <Image Source="fundo.webp"
+             Aspect="AspectFill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+
+             <Image Source="cano.webp"
+             HeightRequest="300"
+             WidthRequest="100"
+             Aspect="AspectFit"
+             HorizontalOptions="End"
+             VerticalOptions="End"/>
+
+             <Image Source="onac.webp"
+             HeightRequest="300"
+             WidthRequest="100"
+             Aspect="AspectFit"
+             HorizontalOptions="End"
+             VerticalOptions="Start"/>
+
+             <Image Source="fishbones.webp"
+             HeightRequest="50"
+             WidthRequest="70"
+             Margin="30,0,0,0"
+             HorizontalOptions="Start"
+             VerticalOptions="Center"/>
+
+             <Image Source="chao.webp"
+             HeightRequest="90"
+             Aspect="AspectFill"
+             HorizontalOptions="Center"
+             VerticalOptions="End"/>
+             
+             </Grid>
 
 </ContentPage>
