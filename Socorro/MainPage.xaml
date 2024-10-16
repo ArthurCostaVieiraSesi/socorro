@@ -15,25 +15,25 @@
                VerticalOptions="Fill"/>
 
         <Image Source="cano.webp"
-               HeightRequest="300"
+               HeightRequest="620"
                x:Name="Cano"
-               WidthRequest="100"
+               WidthRequest="30"
                Aspect="AspectFit"
                HorizontalOptions="End"
                VerticalOptions="End"/>
 
-        <Image Source="onac.webp"
-               HeightRequest="300"
+        <Image Source="onac.jpg"
+               HeightRequest="620"
                x:Name="Onac"
-               WidthRequest="100"
+               WidthRequest="30"
                Aspect="AspectFit"
                HorizontalOptions="End"
                VerticalOptions="Start"/>
 
         <Image Source="fishbones.webp"
-               HeightRequest="55"
+               HeightRequest="50"
                x:Name="Boom"
-               WidthRequest="75"
+               WidthRequest="70"
                Margin="30,0,0,0"
                HorizontalOptions="Start"
                VerticalOptions="Center"/>
