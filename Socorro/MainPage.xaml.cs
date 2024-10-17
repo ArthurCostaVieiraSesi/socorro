@@ -8,12 +8,13 @@ public partial class MainPage : ContentPage
 	bool estaMorto = false;
 	double larguraJanela = 0;
 	double alturaJanela = 0;
-	int velocidade = 10;
-	const int forcaPulo = 30;
+	int velocidade = 7;
+	const int forcaPulo = 25;
 	const int maxTempoPulando = 3;
 	bool estaPulando = false;
 	int tempoPulando = 0;
-	const int aberturaMinima = 50;
+	const int aberturaMinima = 70;
+	int score = 0;
 
 	public MainPage()
 	{
@@ -67,6 +68,7 @@ public partial class MainPage : ContentPage
 	void Inicializar()
 	{
 		Boom.TranslationY = 0;
+		score = 0;
 	}
 
 	void OnGridClicked(object s, TappedEventArgs a)
@@ -90,10 +92,13 @@ public partial class MainPage : ContentPage
 		{
 			Onac.TranslationX = 0;
 			Cano.TranslationX = 0;
-			var alturaMax = -25;
+			var alturaMax = -10;
 			var alturaMin = -Cano.HeightRequest;
 			Onac.TranslationY = Random.Shared.Next((int)alturaMin, (int)alturaMax);
 			Cano.TranslationY = Onac.TranslationY + aberturaMinima + Cano.HeightRequest;
+			score ++;
+			labelScore.Text = "Canos: " + score.ToString("D3");
+			inicio.Text = "Você passou por " + score.ToString("D3") + " canos!";
 		}
 	}
 

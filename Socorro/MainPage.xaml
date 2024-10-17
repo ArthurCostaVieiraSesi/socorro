@@ -14,17 +14,28 @@
                HorizontalOptions="Fill"
                VerticalOptions="Fill"/>
 
+        <Label x:Name="labelScore"
+              Text="Canos: 000"
+              TextColor="Black"
+              Margin="10,10,0,0"
+              FontSize="16"
+              BackgroundColor="White"
+              HorizontalOptions="Start"
+              VerticalOptions="Start"/>
+
         <Image Source="cano.webp"
-               HeightRequest="620"
+               HeightRequest="650"
                x:Name="Cano"
+               BackgroundColor="White"
                WidthRequest="30"
                Aspect="AspectFit"
                HorizontalOptions="End"
                VerticalOptions="End"/>
 
         <Image Source="onac.jpg"
-               HeightRequest="620"
+               HeightRequest="650"
                x:Name="Onac"
+               BackgroundColor="White"
                WidthRequest="30"
                Aspect="AspectFit"
                HorizontalOptions="End"
@@ -39,7 +50,7 @@
                VerticalOptions="Center"/>
 
         <Image Source="chao.webp"
-               HeightRequest="90"
+               HeightRequest="40"
                x:Name="Chao"
                Aspect="AspectFill"
                HorizontalOptions="Center"
@@ -52,6 +63,15 @@
             HorizontalOptions="Fill"
             VerticalOptions="Fill"
             CornerRadius="0">
+            <VerticalStackLayout>
+
+            <Label x:Name="inicio"
+              Text="Você passou por 000 canos!"
+              TextColor="White"
+              FontSize="16"
+              Margin="0,100,0,0"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"/>
 
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Oi"/>
@@ -60,6 +80,7 @@
                    HeightRequest="195"
                    WidthRequest="160"/>
 
+       </VerticalStackLayout>
         </Frame>
 
 
