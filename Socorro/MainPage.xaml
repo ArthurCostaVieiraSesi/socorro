@@ -4,84 +4,85 @@
              x:Class="Socorro.MainPage"
              Shell.NavBarIsVisible="false">
 
-    <Grid>
-        <Grid.GestureRecognizers>
-            <TapGestureRecognizer Tapped="OnGridClicked"/>
-        </Grid.GestureRecognizers>
+       <Grid>
+              <Grid.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="OnGridClicked"/>
+              </Grid.GestureRecognizers>
 
-        <Image Source="fundo.webp"
-               Aspect="AspectFill"
-               HorizontalOptions="Fill"
-               VerticalOptions="Fill"/>
+              <Image Source="fundo.webp"
+                     Aspect="AspectFill"
+                     HorizontalOptions="Fill"
+                     VerticalOptions="Fill"/>
 
-        <Label x:Name="labelScore"
-              Text="Canos: 000"
-              TextColor="Black"
-              Margin="10,10,0,0"
-              FontSize="16"
-              BackgroundColor="White"
-              HorizontalOptions="Start"
-              VerticalOptions="Start"/>
+              <Label x:Name="labelScore"
+                     Text="Canos: 000"
+                     TextColor="Black"
+                     Margin="10,10,0,0"
+                     FontSize="16"
+                     BackgroundColor="White"
+                     HorizontalOptions="Start"
+                     VerticalOptions="Start"/>
 
-        <Image Source="cano.webp"
-               HeightRequest="650"
-               x:Name="Cano"
-               WidthRequest="30"
-               Aspect="AspectFit"
-               HorizontalOptions="End"
-               VerticalOptions="End"/>
+              <Image Source="cano.webp"
+                     HeightRequest="650"
+                     x:Name="Cano"
+                     WidthRequest="30"
+                     Aspect="AspectFit"
+                     HorizontalOptions="End"
+                     VerticalOptions="End"/>
 
-        <Image Source="onac.jpg"
-               HeightRequest="650"
-               x:Name="Onac"
-               WidthRequest="30"
-               Aspect="AspectFit"
-               HorizontalOptions="End"
-               VerticalOptions="Start"/>
+              <Image Source="onac.jpg"
+                     HeightRequest="650"
+                     x:Name="Onac"
+                     WidthRequest="30"
+                     Aspect="AspectFit"
+                     HorizontalOptions="End"
+                     VerticalOptions="Start"/>
 
-        <Image Source="fishbones.webp"
-               HeightRequest="50"
-               x:Name="Boom"
-               WidthRequest="70"
-               Margin="30,0,0,0"
-               HorizontalOptions="Start"
-               VerticalOptions="Center"/>
+              <Image Source="fishbones.webp"
+                     HeightRequest="50"
+                     x:Name="Boom"
+                     WidthRequest="70"
+                     Margin="30,0,0,0"
+                     HorizontalOptions="Start"
+                     VerticalOptions="Center"/>
 
-        <Image Source="chao.webp"
-               HeightRequest="40"
-               x:Name="Chao"
-               Aspect="AspectFill"
-               HorizontalOptions="Center"
-               VerticalOptions="End"/>
+              <Image Source="chao.webp"
+                     x:Name="Chao"
+                     Margin="0"
+                     HeightRequest="50"
+                     Aspect="Fill"
+                     HorizontalOptions="Fill"
+                     VerticalOptions="End"/>
 
-        <Frame
-            IsVisible="true"
-            x:Name="FrameGameOver"
-            BackgroundColor="#99000000"
-            HorizontalOptions="Fill"
-            VerticalOptions="Fill"
-            CornerRadius="0">
-            <VerticalStackLayout>
+              <Frame
+                     IsVisible="true"
+                     x:Name="FrameGameOver"
+                     BackgroundColor="#99000000"
+                     HorizontalOptions="Fill"
+                     VerticalOptions="Fill"
+                     CornerRadius="0">
+                     <VerticalStackLayout>
 
-            <Label x:Name="inicio"
-              Text="Você passou por 000 canos!"
-              TextColor="White"
-              FontSize="16"
-              Margin="0,100,0,0"
-              HorizontalOptions="Center"
-              VerticalOptions="Center"/>
+                            <Label x:Name="inicio"
+                                   Text="Você passou por 000 canos!"
+                                   TextColor="White"
+                                   FontSize="16"
+                                   Margin="0,100,0,0"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
 
-            <Frame.GestureRecognizers>
-                <TapGestureRecognizer Tapped="Oi"/>
-            </Frame.GestureRecognizers>
-            <Image Source="comeco.png"
-                   HeightRequest="195"
-                   WidthRequest="160"/>
+                            <Frame.GestureRecognizers>
+                                   <TapGestureRecognizer Tapped="Oi"/>
+                            </Frame.GestureRecognizers>
+                            <Image Source="comeco.png"
+                                   HeightRequest="195"
+                                   WidthRequest="160"/>
 
-       </VerticalStackLayout>
-        </Frame>
+                     </VerticalStackLayout>
+              </Frame>
 
 
-    </Grid>
+       </Grid>
 
 </ContentPage>
