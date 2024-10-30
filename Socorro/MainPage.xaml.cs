@@ -95,6 +95,7 @@ public partial class MainPage : ContentPage
 		Onac.TranslationX = -larguraJanela;
 		Boom.TranslationY = 0;
 		Boom.TranslationX = 0;
+		velocidade = 10;
 		score = 0;
 	}
 
@@ -112,7 +113,7 @@ public partial class MainPage : ContentPage
 			Onac.TranslationX = 0;
 			Cano.TranslationX = 0;
 
-			var alturaMax = -(Cano.HeightRequest * 0.1);
+			var alturaMax = -(Cano.HeightRequest * 0.5);
 			var alturaMin = -(Cano.HeightRequest * 0.8);
 
 			Onac.TranslationY = Random.Shared.Next((int)alturaMin, (int)alturaMax);
